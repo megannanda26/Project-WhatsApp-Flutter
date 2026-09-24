@@ -71,6 +71,123 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                 ),
+                Card(
+                  elevation: 5,
+                  child: ListTile(
+                    leading: Icon(Icons.person),
+                    title: Text("Fathir"),
+                    subtitle: Text("Aku keren"),
+                    trailing: Text("50", style: TextStyle(color: Colors.green)),
+                  ),
+                ),
+                Card(
+                  elevation: 5,
+                  child: ListTile(
+                    leading: Icon(Icons.person),
+                    title: Text("Fathir"),
+                    subtitle: Text("Aku keren"),
+                    trailing: Text("50", style: TextStyle(color: Colors.green)),
+                  ),
+                ),
+                Card(
+                  elevation: 5,
+                  child: ListTile(
+                    leading: Icon(Icons.person),
+                    title: Text("Fathir"),
+                    subtitle: Text("Aku keren"),
+                    trailing: Text("50", style: TextStyle(color: Colors.green)),
+                  ),
+                ),
+                Card(
+                  elevation: 5,
+                  child: ListTile(
+                    leading: Icon(Icons.person),
+                    title: Text("Fathir"),
+                    subtitle: Text("Aku keren"),
+                    trailing: Text("50", style: TextStyle(color: Colors.green)),
+                  ),
+                ),
+                Card(
+                  elevation: 5,
+                  child: ListTile(
+                    leading: Icon(Icons.person),
+                    title: Text("Fathir"),
+                    subtitle: Text("Aku keren"),
+                    trailing: Text("50", style: TextStyle(color: Colors.green)),
+                  ),
+                ),
+                Card(
+                  elevation: 5,
+                  child: ListTile(
+                    leading: Icon(Icons.person),
+                    title: Text("Fathir"),
+                    subtitle: Text("Aku keren"),
+                    trailing: Text("50", style: TextStyle(color: Colors.green)),
+                  ),
+                ),
+                Card(
+                  elevation: 5,
+                  child: ListTile(
+                    leading: Icon(Icons.person),
+                    title: Text("Fathir"),
+                    subtitle: Text("Aku keren"),
+                    trailing: Text("50", style: TextStyle(color: Colors.green)),
+                  ),
+                ),
+                Card(
+                  elevation: 5,
+                  child: ListTile(
+                    leading: Icon(Icons.person),
+                    title: Text("Fathir"),
+                    subtitle: Text("Aku keren"),
+                    trailing: Text("50", style: TextStyle(color: Colors.green)),
+                  ),
+                ),
+                Card(
+                  elevation: 5,
+                  child: ListTile(
+                    leading: Icon(Icons.person),
+                    title: Text("Fathir"),
+                    subtitle: Text("Aku keren"),
+                    trailing: Text("50", style: TextStyle(color: Colors.green)),
+                  ),
+                ),
+                Card(
+                  elevation: 5,
+                  child: ListTile(
+                    leading: Icon(Icons.person),
+                    title: Text("Fathir"),
+                    subtitle: Text("Aku keren"),
+                    trailing: Text("50", style: TextStyle(color: Colors.green)),
+                  ),
+                ),
+                Card(
+                  elevation: 5,
+                  child: ListTile(
+                    leading: Icon(Icons.person),
+                    title: Text("Fathir"),
+                    subtitle: Text("Aku keren"),
+                    trailing: Text("50", style: TextStyle(color: Colors.green)),
+                  ),
+                ),
+                Card(
+                  elevation: 5,
+                  child: ListTile(
+                    leading: Icon(Icons.person),
+                    title: Text("Fathir"),
+                    subtitle: Text("Aku keren"),
+                    trailing: Text("50", style: TextStyle(color: Colors.green)),
+                  ),
+                ),
+                Card(
+                  elevation: 5,
+                  child: ListTile(
+                    leading: Icon(Icons.person),
+                    title: Text("Fathir"),
+                    subtitle: Text("Aku keren"),
+                    trailing: Text("50", style: TextStyle(color: Colors.green)),
+                  ),
+                ),
               ],
             ),
             ListView(
