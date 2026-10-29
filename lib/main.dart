@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'WhatsApp',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'WhatsApp'),
     );
   }
 }
@@ -45,147 +45,30 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         body: TabBarView(
           children: [
-            ListView(
+            Column(
               children: [
-                Card(
-                  elevation: 5,
-                  child: ListTile(
-                    leading: Icon(Icons.person),
-                    title: Text("Aji"),
-                    subtitle: Text("Aku gaming"),
-                    trailing: Text(
-                      "50",
-                      style: TextStyle(color: Colors.green),
+                InkWell(
+                  onTap: () {
+                    print("Chat ditekan");
+
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const DetailChat(),
+                      ),
+                    );
+                  },
+                  child: Card(
+                    elevation: 30,
+                    child: ListTile(
+                      leading: Icon(Icons.person),
+                      title: Text(
+                        "Aji",
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                      subtitle: Text("Hai, apa kabar?"),
+                      trailing: Text("12.30"),
                     ),
-                  ),
-                ),
-                Card(
-                  elevation: 5,
-                  child: ListTile(
-                    leading: Icon(Icons.person),
-                    title: Text("Fathir"),
-                    subtitle: Text("Aku keren"),
-                    trailing: Text(
-                      "50",
-                      style: TextStyle(color: Colors.green),
-                    ),
-                  ),
-                ),
-                Card(
-                  elevation: 5,
-                  child: ListTile(
-                    leading: Icon(Icons.person),
-                    title: Text("Fathir"),
-                    subtitle: Text("Aku keren"),
-                    trailing: Text("50", style: TextStyle(color: Colors.green)),
-                  ),
-                ),
-                Card(
-                  elevation: 5,
-                  child: ListTile(
-                    leading: Icon(Icons.person),
-                    title: Text("Fathir"),
-                    subtitle: Text("Aku keren"),
-                    trailing: Text("50", style: TextStyle(color: Colors.green)),
-                  ),
-                ),
-                Card(
-                  elevation: 5,
-                  child: ListTile(
-                    leading: Icon(Icons.person),
-                    title: Text("Fathir"),
-                    subtitle: Text("Aku keren"),
-                    trailing: Text("50", style: TextStyle(color: Colors.green)),
-                  ),
-                ),
-                Card(
-                  elevation: 5,
-                  child: ListTile(
-                    leading: Icon(Icons.person),
-                    title: Text("Fathir"),
-                    subtitle: Text("Aku keren"),
-                    trailing: Text("50", style: TextStyle(color: Colors.green)),
-                  ),
-                ),
-                Card(
-                  elevation: 5,
-                  child: ListTile(
-                    leading: Icon(Icons.person),
-                    title: Text("Fathir"),
-                    subtitle: Text("Aku keren"),
-                    trailing: Text("50", style: TextStyle(color: Colors.green)),
-                  ),
-                ),
-                Card(
-                  elevation: 5,
-                  child: ListTile(
-                    leading: Icon(Icons.person),
-                    title: Text("Fathir"),
-                    subtitle: Text("Aku keren"),
-                    trailing: Text("50", style: TextStyle(color: Colors.green)),
-                  ),
-                ),
-                Card(
-                  elevation: 5,
-                  child: ListTile(
-                    leading: Icon(Icons.person),
-                    title: Text("Fathir"),
-                    subtitle: Text("Aku keren"),
-                    trailing: Text("50", style: TextStyle(color: Colors.green)),
-                  ),
-                ),
-                Card(
-                  elevation: 5,
-                  child: ListTile(
-                    leading: Icon(Icons.person),
-                    title: Text("Fathir"),
-                    subtitle: Text("Aku keren"),
-                    trailing: Text("50", style: TextStyle(color: Colors.green)),
-                  ),
-                ),
-                Card(
-                  elevation: 5,
-                  child: ListTile(
-                    leading: Icon(Icons.person),
-                    title: Text("Fathir"),
-                    subtitle: Text("Aku keren"),
-                    trailing: Text("50", style: TextStyle(color: Colors.green)),
-                  ),
-                ),
-                Card(
-                  elevation: 5,
-                  child: ListTile(
-                    leading: Icon(Icons.person),
-                    title: Text("Fathir"),
-                    subtitle: Text("Aku keren"),
-                    trailing: Text("50", style: TextStyle(color: Colors.green)),
-                  ),
-                ),
-                Card(
-                  elevation: 5,
-                  child: ListTile(
-                    leading: Icon(Icons.person),
-                    title: Text("Fathir"),
-                    subtitle: Text("Aku keren"),
-                    trailing: Text("50", style: TextStyle(color: Colors.green)),
-                  ),
-                ),
-                Card(
-                  elevation: 5,
-                  child: ListTile(
-                    leading: Icon(Icons.person),
-                    title: Text("Fathir"),
-                    subtitle: Text("Aku keren"),
-                    trailing: Text("50", style: TextStyle(color: Colors.green)),
-                  ),
-                ),
-                Card(
-                  elevation: 5,
-                  child: ListTile(
-                    leading: Icon(Icons.person),
-                    title: Text("Fathir"),
-                    subtitle: Text("Aku keren"),
-                    trailing: Text("50", style: TextStyle(color: Colors.green)),
                   ),
                 ),
               ],
@@ -218,12 +101,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   subtitle: Text("Ketuk untuk menambahkan pembaruan status"),
                 ),
                 Padding(
-                  padding: EdgeInsets.symmetric(
-                    horizontal: 16.0,
-                    vertical: 8.0,
-                  ),
+                  padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                   child: Text(
-                    "Pembaruan terkini",
+                    'Pembaruan terkini',
                     style: TextStyle(
                       color: Colors.grey,
                       fontWeight: FontWeight.bold,
@@ -241,7 +121,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                   title: Text(
-                    "Aji ganteng",
+                    "Aji",
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                   subtitle: Text("Hari ini, 08.20"),
@@ -249,7 +129,6 @@ class _MyHomePageState extends State<MyHomePage> {
               ],
             ),
 
-            // TAB 3: PANGGILAN
             ListView(
               children: const [
                 ListTile(
@@ -258,7 +137,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: Icon(Icons.person, color: Colors.white),
                   ),
                   title: Text(
-                    "Fathir ganteng",
+                    "Fathir",
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                   subtitle: Row(
@@ -276,7 +155,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: Icon(Icons.person, color: Colors.white),
                   ),
                   title: Text(
-                    "Aji ganteng",
+                    "Aji",
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                   subtitle: Row(
@@ -293,6 +172,18 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
+    );
+  }
+}
+
+class DetailChat extends StatelessWidget {
+  const DetailChat({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text('Aji')),
+      body: const Center(child: Text('Chat dengan Aji')),
     );
   }
 }
